@@ -1,3 +1,7 @@
+prioridad = {"+":1, "-":1, "*":2, "/": 2, "//":2, "%":2, "**":3}  
+
+asociatividad = {"+":"L", "-":"L", "*":"L", "/":"L", "//":"L", "%":"L", "**":"R"}
+
 def shunting_yard(tokens, prioridad, asociatividad):
     cola_salida = []
     pila_operadores = []
